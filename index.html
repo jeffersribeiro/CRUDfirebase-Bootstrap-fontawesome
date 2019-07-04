@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Hello, world!</title>
+    <title>Saving your semester</title>
 </head>
 
 <body onload="readTask()">
@@ -25,14 +25,14 @@
                 <form class="border p-4" id="form">
                     <div class="form-group">
                         <label>Task</label>
-                        <input type="text" class="form-control" id="task" placeholder="Enter Task">
+                        <input type="text" class="form-control" id="task" placeholder="Enter Task" required>
                     </div>
                     <div class="form-group">
                         <label>Description</label>
-                        <input type="text" class="form-control" id="description" placeholder="Description">
+                        <input type="text" class="form-control" id="description" placeholder="Description" required>
                     </div>
 
-                    <button style="display: inline-block" type="submit" id="button1" class="btn btn-primary">ADD Task</button>
+                    <button style="display: inline-block" type="submit" id="button1" class="btn btn-primary"><i class="far fa-plus-square"></i> Add Task</button>
                     <button style="display: none" type="submit" id="button2" class="btn btn-success">Update Task</button>
                     <button style="display: none" type="submit" id="button3" class="btn btn-danger">Cancell</button>
                 </form>

@@ -46,8 +46,8 @@
             <h5 class='card-title'>${taskValue.task}</h5>
             <p class='card-text'>${taskValue.description}</p>
            <button type='submit' style='color:white' class='btn btn-warning'
-            onclick="updateTask(${taskValue.id},'${taskValue.task}','${taskValue.description}')">Edit Task</button>
-            <button type='submit' class='btn btn-danger' onclick='deleteTask(${taskValue.id})'>Delete</button>
+            onclick="updateTask(${taskValue.id},'${taskValue.task}','${taskValue.description}')"><i class="far fa-edit"></i> Edit Task</button>
+            <button type='submit' class='btn btn-danger' onclick='deleteTask(${taskValue.id})'><i class="far fa-trash-alt"></i> Delete</button>
             </div>
             </div>`
         })
@@ -58,14 +58,14 @@
         <form class="border p-4" id="form">
             <div class="form-group">
                 <label>Task</label>
-                <input type="text" class="form-control" id="task" placeholder="Enter Task">
+                <input type="text" class="form-control" id="task" placeholder="Enter Task" required>
             </div>
             <div class="form-group">
                 <label>Description</label>
-                <input type="text" class="form-control" id="description" placeholder="Description">
+                <input type="text" class="form-control" id="description" placeholder="Description" required>
             </div>
 
-            <button id="button1" class="btn btn-primary">ADD Task</button>
+            <button id="button1" class="btn btn-primary"><i class="far fa-plus-square"></i>ADD Task</button>
             <button style="display: none" type="submit" id="button2" class="btn btn-success">Update Task</button>
             <button style="display: none" type="submit" id="button3" class="btn btn-danger">Cancell</button>
         </form>`;
@@ -84,17 +84,17 @@
 
         <div class="form-group">
             <label>Task</label>
-            <input type="text" class="form-control" id="task" placeholder="Enter Task">
+            <input type="text" class="form-control" id="task" placeholder="Enter Task" required>
         </div>
         
         <div class="form-group">
             <label>Description</label>
-            <input type="text" class="form-control" id="description" placeholder="Description">
+            <input type="text" class="form-control" id="description" placeholder="Description" required>
         </div>
 
-        <button style="display: none"  id="button1" class="btn btn-primary">ADD Task</button>
-        <button style="display: inline-block" type="submit" id="button2" class="btn btn-success">Update Task</button>
-        <button style="display: inline-block"  id="button3" class="btn btn-danger">Cancell</button>
+        <button style="display: none"  id="button1" class="btn btn-primary"><i class="far fa-plus-square"></i> ADD Task</button>
+        <button style="display: inline-block" type="submit" id="button2" class="btn btn-success"><i class="fas fa-pencil-alt"></i> Update Task</button>
+        <button style="display: inline-block"  id="button3" class="btn btn-danger"><i class="fas fa-remove-format"></i> Cancell</button>
     </form>`;
         document.getElementById('form2').addEventListener('submit', (e) => {
             e.preventDefault();
