@@ -11,7 +11,7 @@
     <title>Hello, world!</title>
 </head>
 
-<body>
+<body onload="readTask()">
 
     <nav class="navbar navbar-light bg-warning mb-4">
 
@@ -36,7 +36,7 @@
                     <button style="display: none" type="submit" id="button3" class="btn btn-primary">Cancell</button>
                 </form>
             </div>
-            <div class="col-md-6" id="cardsection">
+            <div class="col-md-6" id="cardSection">
 
             </div>
         </div>
@@ -51,8 +51,7 @@
     <script src="https://kit.fontawesome.com/6a8bbf3b28.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
+
     <script src="./index.js"></script>
 </body>
 
