@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="bt-br">
 
 <head>
@@ -15,7 +15,8 @@
 
     <nav class="navbar navbar-light bg-warning mb-4">
 
-        <span class="navbar-brand mb-0 h1">Salvando seu semestre</span>
+        <span class="navbar-brand mb-0 h1">
+                Saving your semester</span>
     </nav>
 
     <div class="container">
@@ -31,13 +32,12 @@
                         <input type="text" class="form-control" id="description" placeholder="Description">
                     </div>
 
-                    <button type="submit" id="button1" class="btn btn-primary">ADD Task</button>
+                    <button style="display: inline-block" type="submit" id="button1" class="btn btn-primary">ADD Task</button>
                     <button style="display: none" type="submit" id="button2" class="btn btn-success">Update Task</button>
-                    <button style="display: none" type="submit" id="button3" class="btn btn-primary">Cancell</button>
+                    <button style="display: none" type="submit" id="button3" class="btn btn-danger">Cancell</button>
                 </form>
             </div>
-            <div class="col-md-6" id="cardSection">
-
+            <div class="col-md-6" id="cardSection" style="overflow: scroll; overflow: auto">
             </div>
         </div>
 
@@ -51,7 +51,8 @@
     <script src="https://kit.fontawesome.com/6a8bbf3b28.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
     <script src="./index.js"></script>
 </body>
 
